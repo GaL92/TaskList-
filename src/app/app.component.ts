@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Task} from './Task';
+import {TASKS} from './mock-tasklist';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+  getTask(): Task[]{
+    return TASKS
+  }
 }
